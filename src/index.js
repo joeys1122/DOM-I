@@ -40,3 +40,16 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+const links = document.querySelectorAll('nav a');
+const linksArray = Array.from(links);
+
+linksArray[0].textContent = siteContent['nav']['nav-item-1'];
+linksArray[1].textContent = siteContent['nav']['nav-item-2'];
+linksArray[2].textContent = siteContent['nav']['nav-item-3'];
+linksArray[3].textContent = siteContent['nav']['nav-item-4'];
+linksArray[4].textContent = siteContent['nav']['nav-item-5'];
+linksArray[5].textContent = siteContent['nav']['nav-item-6'];
+linksArray.forEach((link) => {
+  link.className = 'italic';
+});
