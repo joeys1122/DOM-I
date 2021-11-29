@@ -53,3 +53,15 @@ linksArray[5].textContent = siteContent['nav']['nav-item-6'];
 linksArray.forEach((link) => {
   link.className = 'italic';
 });
+
+const headerImg = document.querySelector('#logo-img');
+headerImg.src = 'mocks/img/logo.png';
+
+const cta = document.querySelector('.cta-text')
+const ctaHead = cta.querySelector('h1');
+const ctaButton = cta.querySelector('button');
+ctaHead.textContent = siteContent['cta']['h1'];
+ctaButton.textContent = siteContent['cta']['button'];
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.src = 'mocks/img/cta.png';
