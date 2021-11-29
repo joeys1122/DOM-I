@@ -43,16 +43,13 @@ console.log('project wired!')
 
 const links = document.querySelectorAll('nav a');
 const linksArray = Array.from(links);
-
 linksArray[0].textContent = siteContent['nav']['nav-item-1'];
 linksArray[1].textContent = siteContent['nav']['nav-item-2'];
 linksArray[2].textContent = siteContent['nav']['nav-item-3'];
 linksArray[3].textContent = siteContent['nav']['nav-item-4'];
 linksArray[4].textContent = siteContent['nav']['nav-item-5'];
 linksArray[5].textContent = siteContent['nav']['nav-item-6'];
-linksArray.forEach((link) => {
-  link.className = 'italic';
-});
+linksArray.forEach(link => link.className = 'italic');
 
 const headerImg = document.querySelector('#logo-img');
 headerImg.src = 'mocks/img/logo.png';
@@ -65,3 +62,20 @@ ctaButton.textContent = siteContent['cta']['button'];
 
 const ctaImg = document.querySelector('#cta-img');
 ctaImg.src = 'mocks/img/cta.png';
+
+const topContent = document.querySelector('.top-content');
+
+const features = topContent.querySelector('.text-content:nth-of-type(1)');
+const featuresHead = features.querySelector('h4');
+const featuresContent = features.querySelector('p');
+featuresHead.textContent = siteContent['main-content']['features-h4'];
+featuresContent.textContent = siteContent['main-content']['features-content'];
+
+const about = topContent.querySelector('.text-content:nth-of-type(2)');
+const aboutHead = about.querySelector('h4');
+const aboutContent = about.querySelector('p');
+aboutHead.textContent = siteContent['main-content']['about-h4'];
+aboutContent.textContent = siteContent['main-content']['about-content'];
+
+const midImg = document.querySelector('#middle-img');
+midImg.src = 'mocks/img/accent.png';
