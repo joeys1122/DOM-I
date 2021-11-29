@@ -79,3 +79,37 @@ aboutContent.textContent = siteContent['main-content']['about-content'];
 
 const midImg = document.querySelector('#middle-img');
 midImg.src = 'mocks/img/accent.png';
+
+const bottomContent = document.querySelector('.bottom-content');
+
+const services = bottomContent.querySelector('.text-content:nth-of-type(1)');
+const servicesHead = services.querySelector('h4');
+const servicesContent = services.querySelector('p');
+servicesHead.textContent = siteContent['main-content']['services-h4'];
+servicesContent.textContent = siteContent['main-content']['services-content'];
+
+const product = bottomContent.querySelector('.text-content:nth-of-type(2)');
+const productHead = product.querySelector('h4');
+const productContent = product.querySelector('p');
+productHead.textContent = siteContent['main-content']['product-h4'];
+productContent.textContent = siteContent['main-content']['product-content'];
+
+const vision = bottomContent.querySelector('.text-content:nth-of-type(3)');
+const visionHead = vision.querySelector('h4');
+const visionContent = vision.querySelector('p');
+visionHead.textContent = siteContent['main-content']['vision-h4'];
+visionContent.textContent = siteContent['main-content']['vision-content'];
+
+const contact = document.querySelector('.contact');
+const contactHead = contact.querySelector('h4');
+const address = contact.querySelector('p:nth-of-type(1)');
+const phone = contact.querySelector('p:nth-of-type(2)');
+const email = contact.querySelector('p:nth-of-type(3)');
+contactHead.textContent = siteContent['contact']['contact-h4'];
+address.textContent = siteContent['contact']['address'];
+phone.textContent = siteContent['contact']['phone'];
+email.textContent = siteContent['contact']['email'];
+
+const footer = document.querySelector('footer a');
+footer.className = 'bold';
+footer.textContent = siteContent['footer']['copyright'];
